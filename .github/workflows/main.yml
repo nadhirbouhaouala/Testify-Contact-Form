@@ -33,6 +33,12 @@ jobs:
       - name: Install dependencies
         run: mvn install -DskipTests  # Installe les dépendances sans exécuter les tests
 
+      - name: Exécuter une commande Linux
+        run: |
+          echo "Hello, Linux command line!"
+          ls -l
+          # Vous pouvez exécuter n'importe quelle commande Linux ici
+
       - name: Run tests
         run: mvn test  # Exécute les tests unitaires
 
