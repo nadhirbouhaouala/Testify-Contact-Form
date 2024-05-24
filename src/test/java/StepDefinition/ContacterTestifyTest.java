@@ -12,7 +12,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Contacter_TtestifySD {
+public class ContacterTestifyTest {
 	
 	private WebDriver driver;
 	private String baseUrl;

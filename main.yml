@@ -33,6 +33,11 @@ jobs:
       - name: Install dependencies
         run: mvn install -DskipTests  # Installe les dépendances sans exécuter les tests
 
+       - name: Verifier l'environnement (projet, maven, jdk)
+        run: |
+          ls -l
+          mvn -v 
+
       - name: Run tests
         run: mvn test  # Exécute les tests unitaires
 
