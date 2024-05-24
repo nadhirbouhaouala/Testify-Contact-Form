@@ -11,7 +11,7 @@
   </properties>
 
   <!-- pour détecter les tests : chercher des fichiers de test qui se terminent par Test.java et lancer les tests -->
-  <!--<build>
+  <build>
        <plugins>
            <plugin>
                <groupId>org.apache.maven.plugins</groupId>
@@ -24,7 +24,7 @@
                </configuration>
            </plugin>
        </plugins>
-   </build>-->
+   </build>
   
   <dependencies>
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
