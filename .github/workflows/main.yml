@@ -35,9 +35,9 @@ jobs:
 
       - name: Exécuter une commande Linux
         run: |
-          ls -l
+          ls -la
           mvn -v 
-          ls -la /src/test/java/StepDefinitions
+          ls -la /src/test/java/StepDefinition
 
       - name: Run tests
         run: mvn test  # Exécute les tests unitaires
