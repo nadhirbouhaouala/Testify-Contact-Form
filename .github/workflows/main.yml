@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v3  # Télécharge les résultats des tests
         with:
           name: test-results
-          path: target/cucumber-reports/
+          path: target/
 
   deploy:
     runs-on: ubuntu-latest
@@ -67,4 +67,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3  # Déploie les rapports sur GitHub Pages
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/cucumber-reports/
+          publish_dir: target/
