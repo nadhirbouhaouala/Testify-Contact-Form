@@ -35,9 +35,9 @@ jobs:
 
       - name: Exécuter une commande Linux
         run: |
-          echo "Hello, Linux command line!"
           ls -l
-          # Vous pouvez exécuter n'importe quelle commande Linux ici
+          mvn -v 
+          ls -la /src/test/java/StepDefinitions
 
       - name: Run tests
         run: mvn test  # Exécute les tests unitaires
